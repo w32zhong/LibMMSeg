@@ -1,0 +1,6 @@
+./bootstrap
+./configure
+make
+./src/mmseg -u ./data/unigram.txt
+mv data/unigram.txt.uni ./uni.lib
+./src/mmseg -d ./ ./src/t1.txt
